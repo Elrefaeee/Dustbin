@@ -1,0 +1,26 @@
+name: smart_dustbin
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  mqtt_client: ^10.6.1
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+dependency_overrides:
+  meta: ^1.16.0 # Override meta version to match mqtt_client requirements
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/logo.png
+    - assets/data/ca.pem
